@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            CSE-564: MiniProject 2
+        </title>  
+        <meta charset="utf-8">
+
+        <script src = "https://d3js.org/d3.v4.min.js"></script>
+        <!-- <script src = "https://d3js.org/d3.v3.min.js"></script> -->
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+
+    </head> 
+    
+    <body>
+        <h2 style="text-align: center; font-family: serif; padding-top: 5px;">Visualization: Mini Project #2</h2>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info border-left border-right border-white rounded-lg" style="border-width:8px !important;">
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav" style="text-align: center;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Tasks</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="ScreePlot();">Screeplot & Scatterplot Matrix</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="getPCABiplotData();">PCA Biplot</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="euclidianMDS();">MDS Euclidian</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="correlationMDS();">MDS Correlation & PCP</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="pcaBP"></div>
+        <div class="mds_pcp">
+            <div class="mds"></div>
+            <div class="pcp"></div>
+        </div>
+        <div class="container2">
+            <div class="main"></div>
+            <div class="attrTable"></div>
+        </div>
+        <div class="spm"></div>
+            
+
+    </body>
+
+</html>

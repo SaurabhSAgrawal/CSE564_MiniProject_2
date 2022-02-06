@@ -1,0 +1,131 @@
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+    color: ivory;
+  }
+  .navbar .nav-item:hover .nav-link {
+    color: white;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.line2 {
+  stroke: #16a511;
+  stroke-width: 2px;
+  fill: none;
+}
+
+.dot2 {
+  fill: #ddfa38;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.intrinsic {
+  fill: #f1f3f3;
+  stroke: #6f257f;
+  stroke-width: 3px;
+}
+
+path {
+  fill: none;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 65px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.axis,
+.frame {
+  shape-rendering: crispEdges;
+}
+
+.cell text {
+  font: 14px sans-serif;
+  font-weight: bold;
+  fill: black;
+}
+
+.frame {
+  fill: none;
+  stroke: #aaa;
+}
+
+circle {
+  fill-opacity: 0.7;
+}
+
+circle.hidden {
+  fill: #ccc !important;
+}
+
+.extent {
+  fill: #000;
+  fill-opacity: 0.125;
+  stroke: #fff;
+}
+
+path {
+  stroke: black;
+  stroke-width: 1;
+  fill: none;
+}
+
+.axis line {
+  stroke: #ddd;
+}
+
+.axis path {
+  display: none;
+}
+
+td {
+  text-align: center;
+}
+
+table,
+th {
+  border: 1px solid black;
+}
+
+div.container2 {
+  width: 40%;
+  display: inline-block;
+  float: left;
+  left: 0;
+}
+
+div.main {
+  left: 0;
+}
+
+div.attrTable {
+  display: inline-block;
+  left: 0;
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+div.spm {
+  width: 60%;
+  display: inline-block;
+  right: 0;
+}
